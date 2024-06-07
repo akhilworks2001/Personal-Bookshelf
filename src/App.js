@@ -19,8 +19,8 @@ const App = () => {
     }
   };
 
-  const removeFromBookshelf = (bookKey) => {
-    const updatedBookshelf = bookshelf.filter((book) => book.key !== bookKey);
+  const removeFromBookshelf = (recBook) => {
+    const updatedBookshelf = bookshelf.filter((book) => book.key !== recBook.key);
     setBookshelf(updatedBookshelf);
   };
 
