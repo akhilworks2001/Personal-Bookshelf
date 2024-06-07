@@ -1,0 +1,74 @@
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #7bd07b;
+  border-radius: 15px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  margin:50px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+  color: black;
+  padding: 8px 15px;
+}
+
+*{
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: math;
+  background-color: #7bd07b;
+  padding: 5px 12px;
+  border-radius: 18px;
+  color: black;
+}
+
+nav {
+  display: flex;
+    justify-content: space-around;
+    margin: 10px 100px;   
+}
+
+input {
+  border: none;
+  background-color: #7bd07b;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+h1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 992px) {
+  .results {
+    grid-template-columns: auto auto;
+  }
+  nav {
+      margin: 10px 50px;   
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .results {
+    grid-template-columns: auto;
+  }
+  nav {
+    justify-content: space-between;
+}
+}
