@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function BookCard({book, addToBookshelf, removeFromBookshelf}) {
+export default function BookCard({book, fun, type}) {
   return (
       <div className="book-card">
         <div className='container'>
@@ -11,9 +11,7 @@ export default function BookCard({book, addToBookshelf, removeFromBookshelf}) {
           <h3>Book Edition:</h3>
           <p>{book?.edition_count}</p>
         </div>
-          <button onClick={() => addToBookshelf ? addToBookshelf(book) : removeFromBookshelf(book)}> 
-          {addToBookshelf ? 'Add to Bookshelf' : 'Remove'}
-          </button>
+          <button onClick={() => fun(book)}> { type === 'add' ?  'Add to Bookshelf' : 'Remove'}  </button>
       </div>
   )
 }
