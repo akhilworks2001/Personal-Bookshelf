@@ -37,7 +37,8 @@ export default function SearchPage({ addToBookshelf }) {
                         <BookCard 
                             key={book.key}
                             book={book}
-                            addToBookshelf={addToBookshelf}
+                            fun={addToBookshelf}
+                            type={'add'}
                         />
                     ))
                 }
